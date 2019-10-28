@@ -1,0 +1,9 @@
+name = Sample Rss Feeds
+description = Sample RSS Feeds Import
+package = Other
+core = 7.x
+configure = admin/config/content/rss_feeds
+dependencies[] = feeds
+dependencies[] = block
+files[] = rss_feeds/rss_feeds.test
+files[] = rss_feeds.module

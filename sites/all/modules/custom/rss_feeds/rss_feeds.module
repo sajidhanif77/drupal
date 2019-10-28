@@ -1,0 +1,23 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+function rss_feeds_menu()
+{
+  $items['admin/config/content/rss_feeds'] = array(
+    'title' => 'RSS Feeds Menu Settings',
+    'description' => 'Administer RSS Feeds Menu Settings.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => 'rss_feeds_settings_form',
+    'access arguments' => array('Manage RSS Feeds Settings.'),
+    'file' => 'rss_feeds.admin.inc',
+  );
+  $items['admin/reports/rss_feeds'] = array(
+    'title' => 'RSS Feeds Block Posts',
+    'description' => 'View RSS Imported Feeds.',
+    'page callback' => 'rss_feeds_posts',
+    'access arguments' => array('View RSS Imported Feeds.'),
+    'file' => 'rss_feeds.admin.inc',
+  );
+}
