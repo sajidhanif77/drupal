@@ -20,4 +20,5 @@ function rss_feeds_menu()
     'access arguments' => array('View RSS Imported Feeds.'),
     'file' => 'rss_feeds.admin.inc',
   );
+  return $items;
 }
