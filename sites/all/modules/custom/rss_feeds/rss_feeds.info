@@ -1,9 +1,9 @@
-name = Sample Rss Feeds
-description = Sample RSS Feeds Import
+name = RSS Feeds
+description = This module shows RSS Feeds in a block
 package = Other
 core = 7.x
 configure = admin/config/content/rss_feeds
 dependencies[] = feeds
 dependencies[] = block
-files[] = rss_feeds/rss_feeds.test
 files[] = rss_feeds.module
+files[] = rss_feeds.admin.inc

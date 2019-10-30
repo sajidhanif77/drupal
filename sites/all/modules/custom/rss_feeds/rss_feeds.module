@@ -6,19 +6,43 @@
 function rss_feeds_menu()
 {
   $items['admin/config/content/rss_feeds'] = array(
-    'title' => 'RSS Feeds Menu Settings',
-    'description' => 'Administer RSS Feeds Menu Settings.',
+    'title' => 'RSS Feeds Administratin Settings',
+    'description' => 'Administer RSS Feeds Settings.',
     'page callback' => 'drupal_get_form',
-    'page arguments' => 'rss_feeds_settings_form',
-    'access arguments' => array('Manage RSS Feeds Settings.'),
+    'page arguments' => array('rss_feeds_settings_form'),
+    //'access arguments' => array('Manage RSS Feeds Settings.'),
+    'access arguments' => array('Manage RSS Feeds Settings'),
     'file' => 'rss_feeds.admin.inc',
+    'access callback' => array(TRUE),
   );
-  $items['admin/reports/rss_feeds'] = array(
+  /*$items['admin/reports/rss_feeds'] = array(
     'title' => 'RSS Feeds Block Posts',
     'description' => 'View RSS Imported Feeds.',
     'page callback' => 'rss_feeds_posts',
-    'access arguments' => array('View RSS Imported Feeds.'),
+    'access arguments' => array('View RSS Feeds'),
     'file' => 'rss_feeds.admin.inc',
-  );
+  );*/
   return $items;
 }
+
+/**
+Implements hook_permission().
+*/
+function rss_feeds_permission() {
+  return array(
+    'View RSS Feeds' => array(
+      'title' => t('View RSS Feeds'),
+      'description' => t('View RSS Feeds.'),
+    ),
+    'Change RSS Feeds' => array(
+      'title' => t('Change RSS Feeds'),
+      'description' => t('Change RSS Feeds.'),
+    ),
+    'Manage RSS Feeds Settings' => array(
+      'title' => t('Manage RSS Feeds Settings'),
+      'description' => t('Manage RSS Feeds Settings.'),
+    ),
+  );
+
+}
+
