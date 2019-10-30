@@ -4,7 +4,6 @@
     <list default="true" id="c498dc8b-9623-4914-a81e-bc772ab6fc3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sites/all/modules/custom/rss_feeds/rss_feeds.admin.inc" beforeDir="false" afterPath="$PROJECT_DIR$/sites/all/modules/custom/rss_feeds/rss_feeds.admin.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sites/all/modules/custom/rss_feeds/rss_feeds.info" beforeDir="false" afterPath="$PROJECT_DIR$/sites/all/modules/custom/rss_feeds/rss_feeds.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sites/all/modules/custom/rss_feeds/rss_feeds.module" beforeDir="false" afterPath="$PROJECT_DIR$/sites/all/modules/custom/rss_feeds/rss_feeds.module" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

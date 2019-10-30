@@ -10,18 +10,16 @@ function rss_feeds_menu()
     'description' => 'Administer RSS Feeds Settings.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('rss_feeds_settings_form'),
-    //'access arguments' => array('Manage RSS Feeds Settings.'),
     'access arguments' => array('Manage RSS Feeds Settings'),
     'file' => 'rss_feeds.admin.inc',
-    'access callback' => array(TRUE),
   );
-  /*$items['admin/reports/rss_feeds'] = array(
+  $items['admin/reports/rss_feeds'] = array(
     'title' => 'RSS Feeds Block Posts',
     'description' => 'View RSS Imported Feeds.',
     'page callback' => 'rss_feeds_posts',
     'access arguments' => array('View RSS Feeds'),
     'file' => 'rss_feeds.admin.inc',
-  );*/
+  );
   return $items;
 }
 
